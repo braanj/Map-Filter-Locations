@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Map - Leaflet Lib</title>
+  <!-- Leaflet Lib -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" />
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+  <section class="interactive-map">
+    <div class="filters">
+      <div class="title me-3">Filtres:</div>
+      <div class="center">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="fl-infopratique" value="work"
+            id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Work
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="fl-infopratique" value="art_and_culture"
+            id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Art & culture
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="fl-infopratique" value="histoire "
+            id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Histoire
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="fl-infopratique" value="hobbies" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Hobbies
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="fl-infopratique" value="monuments"
+            id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Monuments
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="fl-infopratique" value="eglises" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Eglises
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="fl-infopratique" value="museums" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Museums
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="fl-infopratique" value="parks_and_gardens"
+            id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Parks and gardens
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="fl-infopratique" value="suitable_for_children"
+            id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Suitable for children
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="fl-infopratique" value="free" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Free
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="fl-infopratique" value="paid" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Paid
+          </label>
+        </div>
+      </div>
+    </div>
+    <div id="map"></div>
+  </section>
+
+  <!-- Jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"></script>
+  <script src="/app.js"></script>
+</body>
+
+</html>

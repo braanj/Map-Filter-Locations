@@ -1,0 +1,18 @@
+#map {
+  height: 80vh;
+}
+
+.interactive-map,
+.filters .center {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#map,
+.filters {
+  flex: 1 0 300px;
+}
+
+.form-check {
+  flex: 0 0 50%;
+}

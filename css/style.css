@@ -1,3 +1,9 @@
+html, body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.title {
+  font-weight: 700;
+}
 #map {
   height: 80vh;
 }

@@ -19,7 +19,7 @@ $(() => {
 
   // Create map
   let createMap = () => {
-    map = L.map('map').setView([40.6024055, -74.9093484], 10);
+    map = L.map('map').setView([40.7062208,-73.9997683], 9);
     L.tileLayer('https://teuliera.jindexe.com/hightesting/{z}/{x}/{y}.png').addTo(map);
 
     $.each(Locations, (_, location) => {

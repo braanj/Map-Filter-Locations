@@ -13,7 +13,7 @@ $(() => {
     }
     rawFile.send(null);
   }
-  getLocations("/locations.json", (text) => {
+  getLocations("/data/locations.json", (text) => {
     return Locations = JSON.parse(text).locations;
   });
 

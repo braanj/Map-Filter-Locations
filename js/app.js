@@ -19,7 +19,7 @@ $(() => {
 
   // Create map
   let createMap = () => {
-    map = L.map('map').setView([40.7062208,-73.9997683], 9);
+    map = L.map('map').setView([40.7062208, -73.9997683], 9);
     L.tileLayer('https://teuliera.jindexe.com/hightesting/{z}/{x}/{y}.png').addTo(map);
 
     $.each(Locations, (_, location) => {
@@ -46,7 +46,7 @@ $(() => {
     // Readd all markers
     if ($.isEmptyObject(selectedFilters)) {
       $.each(markers, (_, marker) => {
-        map.addLayer(marker)
+        map.addLayer(marker);
       })
     }
 
@@ -87,6 +87,12 @@ $(() => {
         layer.remove();
       }
     });
+    // Add other markers doesn't already exist on the map
+    $.each(markers, (_, marker) => {
+      if ($.inArray(marker, $filteredResults) != -1) {
+        map.addLayer(marker);
+      }
+    })
   }
 
   // Initialize app
